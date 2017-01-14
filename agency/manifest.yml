@@ -2,9 +2,9 @@
 instances: 1
 memory: 512M
 applications:
-  - name: agency
-    services:
-      - service-registry
-      - circuit-breaker-dashboard
-    env:
-      SPRING_PROFILES_ACTIVE: dev
+- name: agency
+  random-route: true
+  path: build/libs/agency-0.0.1-SNAPSHOT.jar
+  services:
+  - smoke-test-sr
+  - smoke-test-cbd
