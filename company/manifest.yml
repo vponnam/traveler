@@ -1,4 +1,5 @@
 ---
+buildpack: java_buildpack_offline
 memory: 512M
 applications:
 - name: company
