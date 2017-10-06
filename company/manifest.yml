@@ -1,6 +1,6 @@
 ---
 buildpack: java_buildpack_offline
-memory: 512M
+memory: 1G
 applications:
 - name: company
   random-route: true
